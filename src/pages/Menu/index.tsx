@@ -7,6 +7,12 @@ export default function Menu() {
             <nav className={styles.menu}>
                 <Logo />
             </nav>
+            <header className={styles.header}>
+                {/*Using CSS BEM Pattern*/}
+                <div className={styles.header__text}>
+                    My Lovely Cats
+                </div>
+            </header>
         </main>
     )
 }

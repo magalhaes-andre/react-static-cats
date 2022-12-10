@@ -1,10 +1,16 @@
-.button {
-    border-radius: 4px;
-    background: #2B7DE9;
-    color: white;
-    padding: 12px;
+.menu {
+    padding: 20 600px;
 }
 
-.menu {
-    padding: 20 250px;
+.header {
+    align-items: center;
+    background-image: url('/assets/header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    & text {
+        color: white;
+    }
 }
