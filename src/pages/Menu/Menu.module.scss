@@ -1,5 +1,5 @@
 .menu {
-    padding: 20 600px;
+    padding: 20 250px;
 }
 
 .header {
@@ -10,7 +10,11 @@
     display: flex;
     height: 300px;
     justify-content: center;
-    & text {
+    padding: 0 250px;
+    &__text {
         color: white;
+        font-size: 5rem;
+        min-width: 400px;
+        width: 40%;
     }
 }
