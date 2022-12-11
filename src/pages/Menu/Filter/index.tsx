@@ -10,9 +10,13 @@ interface Props {
     setFilter: React.Dispatch<React.SetStateAction<number | null>>;
 }
 
-export default function Filter({ filter, setFilter}: Props) {
+export default function Filter({ filter, setFilter }: Props) {
 
     function selectFilter(option: IOption) {
+        if (filter === option.id) {
+            return setFilter(null);
+        }
+
         return setFilter(option.id);
     }
 
