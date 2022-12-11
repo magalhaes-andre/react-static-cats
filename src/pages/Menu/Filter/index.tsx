@@ -1,6 +1,7 @@
+import React from 'react';
 import filters from './filters.json';
 import styles from './Filter.module.scss';
-import React from 'react';
+import classNames from 'classnames';
 
 //Creating simpler types. Works well when pulling from a static file.
 type IOption = typeof filters[0];
@@ -24,8 +25,13 @@ export default function Filter({ filter, setFilter }: Props) {
         //TODO: Study why this map uses () inside function and how the behavior differs from one symbol to another.
         <div className={styles.filters}>
             {filters.map((option) => (
+                //TODO: Study on classNames dependency and write about it.
                 <button
-                    className={`${styles.filters__filter} ${filter === option.id ? styles["filters__filter--active"] : ""}`}
+                    
+                    className={classNames({
+                        [styles.filters__filter]: true,
+                        [styles['filters__filter--active']]: filter === option.id
+                    })}
                     key={option.id}
                     onClick={() => selectFilter(option)}>
                     {option.label}

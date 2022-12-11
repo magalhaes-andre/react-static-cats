@@ -14,6 +14,7 @@ export default function Search({ searchText, setSearchText }: Props) {
             <input
                 value={searchText}
                 onChange={event => setSearchText(event.target.value)}
+                placeholder="Search"
             />
             <CgSearch
                 size={20}
