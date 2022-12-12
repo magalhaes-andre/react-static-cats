@@ -1,0 +1,103 @@
+@import "styles/variables";
+@import "styles/breakpoints";
+
+$red: #d73b3b;
+$blackie: #d73;
+$three-color: #30201e;
+$two-color: #e6c864;
+$tiger: #80aa40;
+
+.cat {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  &__image {
+    min-width: 240px;
+    @media (max-width: $desktop_xsm) {
+      width: 100%;
+    }
+    img {
+      border-radius: 8px;
+      width: 100%;
+    }
+  }
+  &__description {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 20px;
+    @media (max-width: $desktop_xsm) {
+      flex-direction: row;
+      margin-top: 20px;
+      padding: 0;
+    }
+  }
+  &__title {
+    h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    p {
+      color: $dark-grey;
+      font-size: 1.3rem;
+      font-weight: 600;
+      max-width: 600px;
+      margin-bottom: 20px;
+    }
+  }
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    max-width: 700px;
+    @media (max-width: $desktop_xsm) {
+      justify-content: flex-end;
+    }
+    @media (max-width: $mobile) {
+      justify-content: flex-start;
+    }
+    > div {
+      margin: 10px;
+    }
+  }
+  &__type {
+    align-items: center;
+    border-radius: 2px;
+    display: flex;
+    font-weight: bold;
+    height: 40px;
+    justify-content: center;
+    padding: 10px 30px;
+    &__blackies {
+      background-color: $blackie;
+      color: white;
+    }
+    &__three-color {
+      background-color: $three-color;
+      color: white;
+    }
+    &__two-color {
+      background-color: $two-color;
+    }
+    &__tiger {
+      background-color: $tiger;
+    }
+  }
+  &__lazy,
+  &__affect,
+  &__category {
+    align-items: center;
+    display: flex;
+    font-size: 1.25rem;
+    font-weight: bold;
+    justify-content: center;
+  }
+  &__age {
+    color: $red;
+    font-size: 1.7rem;
+  }
+}

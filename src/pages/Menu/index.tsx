@@ -4,6 +4,7 @@ import Search from './Search';
 import { useState } from 'react';
 import Filter from './Filter';
 import Ordenator from './Ordenator';
+import Cats from './Cats';
 
 export default function Menu() {
     //  These are state variables and it's setters. TODO: Find documentation about it.
@@ -29,6 +30,7 @@ export default function Menu() {
                     <Filter filter={filter} setFilter={setFilter}/>
                     <Ordenator ordenator={ordenator} setOrdenator={setOrdenator}/>
                 </div>
+                <Cats />
             </section>
         </main>
     )

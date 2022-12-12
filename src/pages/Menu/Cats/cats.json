@@ -1,0 +1,73 @@
+[
+    {
+      "name": "Sabrino",
+      "bio": "Frajolinha",
+      "photo": "/assets/pratos/macarrao_mediterraneo.png",
+      "weight": 400,
+      "age": 3,
+      "lazy": 73.0,
+      "affect": 1,
+      "id": 1,
+      "category": {
+        "id": 1,
+        "label": "Bicolor"
+      }
+    },
+    {
+        "name": "Daisy",
+        "bio": "Tatruga",
+        "photo": "/assets/pratos/macarrao_mediterraneo.png",
+        "weight": 400,
+        "age": 2,
+        "lazy": 73.0,
+        "affect": 1,
+        "id": 1,
+        "category": {
+          "id": 1,
+          "label": "Tricolor"
+        }
+      },
+      {
+        "name": "Nora",
+        "bio": "Fofa",
+        "photo": "/assets/pratos/macarrao_mediterraneo.png",
+        "weight": 400,
+        "age": 2,
+        "lazy": 73.0,
+        "affect": 1,
+        "id": 1,
+        "category": {
+          "id": 1,
+          "label": "Bicolor"
+        }
+      },
+      {
+        "name": "Madiba",
+        "bio": "Veio",
+        "photo": "/assets/pratos/macarrao_mediterraneo.png",
+        "weight": 400,
+        "age": 2,
+        "lazy": 73.0,
+        "affect": 1,
+        "id": 1,
+        "category": {
+          "id": 1,
+          "label": "Preto"
+        }
+      },
+      {
+        "name": "Madeline",
+        "bio": "Madê, madu",
+        "photo": "/assets/pratos/macarrao_mediterraneo.png",
+        "weight": 400,
+        "age": 2,
+        "lazy": 73.0,
+        "affect": 1,
+        "id": 1,
+        "category": {
+          "id": 1,
+          "label": "Frajola"
+        }
+      }
+    
+  ]
